@@ -102,6 +102,7 @@ static Key keys[] = {
     { MODKEY,                       XK_F5,     spawn,          SHCMD("idea") },
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
+    { 0,                            XK_Print,  spawn,          SHCMD("screenshot") },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
