@@ -1,5 +1,20 @@
 /* See LICENSE file for copyright and license details. */
 
+/* mbp-mappings */
+#define XF86MonBrightnessDown   0x1008ff03
+#define XF86MonBrightnessUp     0x1008ff02
+#define XF86LauncherKB1         0x1008ff4a
+#define XF86LauncherKB2         0x1008ff4b
+#define XF86KbdBrightnessUp     0x1008ff05
+#define XF86KbdBrightnessDown   0x1008ff06
+#define XF86AudioLowerVolume    0x1008ff11
+#define XF86AudioMute           0x1008ff12
+#define XF86AudioRaiseVolume    0x1008ff13
+#define XF86AudioPlay           0x1008ff14
+#define XF86AudioStop           0x1008ff15
+#define XF86AudioPrev           0x1008ff16
+#define XF86AudioNext           0x1008ff17
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -103,6 +118,11 @@ static Key keys[] = {
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
     { 0,                            XK_Print,  spawn,          SHCMD("screenshot") },
+
+    { 0,                            XF86AudioPlay,  spawn,      SHCMD("playerctl play-pause")} ,
+    { 0,                            XF86AudioStop,  spawn,      SHCMD("playerctl stop")} ,
+    { 0,                            XF86AudioNext, spawn,      SHCMD("playerctl next")} ,
+    { 0,                            XF86AudioPrev, spawn,      SHCMD("playerctl previous")} ,
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
