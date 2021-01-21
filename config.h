@@ -14,6 +14,7 @@
 #define XF86AudioStop           0x1008ff15
 #define XF86AudioPrev           0x1008ff16
 #define XF86AudioNext           0x1008ff17
+#define XF86AudioPause          0x1008ff31
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -123,6 +124,7 @@ static Key keys[] = {
     { 0,                            XK_Print,  spawn,          SHCMD("screenshot") },
 
     { 0,                            XF86AudioPlay,  spawn,      SHCMD("playerctl play-pause")} ,
+    { 0,                            XF86AudioPause,  spawn,      SHCMD("playerctl pause")} ,
     { 0,                            XF86AudioStop,  spawn,      SHCMD("playerctl stop")} ,
     { 0,                            XF86AudioNext, spawn,      SHCMD("playerctl next")} ,
     { 0,                            XF86AudioPrev, spawn,      SHCMD("playerctl previous")} ,
