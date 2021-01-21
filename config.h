@@ -52,6 +52,10 @@ static const Rule rules[] = {
     {"st", NULL, NULL, 0, 0, 1, 1, -1},
     {"Xephyr", NULL, NULL, 0, 1, 0, 0, -1},
     {"Xnest", NULL, NULL, 0, 1, 0, 0, -1},
+    {"streamdeck", NULL, NULL, 0, 0, 0, 1, -1},
+    {"jetbrains-toolbox", NULL, NULL, 0, 1, 0, 1, -1},
+    {"jetbrains-idea", NULL, NULL, 0, 0, 0, 1, -1},
+    {"jetbrains-idea", NULL, "Welcome to IntelliJ IDEA", 0, 1, 0, 1, -1},
 };
 
 /* layout(s) */
