@@ -56,6 +56,9 @@ static const Rule rules[] = {
     {"streamdeck", NULL, NULL, 0, 0, 0, 1, 0,  -1},
     {"jetbrains-toolbox", NULL, NULL, 0, 1, 0, 1, 0, -1},
     {"jetbrains-idea", NULL, NULL, 0, 0, 0, 1, 1, -1},
+    {"jetbrains-webstorm", NULL, NULL, 0, 0, 0, 1, 1, -1},
+    {"jetbrains-clion", NULL, NULL, 0, 0, 0, 1, 1, -1},
+    {"jetbrains-pycharm", NULL, NULL, 0, 0, 0, 1, 1, -1},
     {"jetbrains-idea", NULL, "Welcome to IntelliJ IDEA", 0, 1, 0, 1, 0, -1},
 };
 
