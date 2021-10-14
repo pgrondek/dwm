@@ -60,6 +60,7 @@ static const Rule rules[] = {
     {"jetbrains-clion", NULL, NULL, 0, 0, 0, 1, 1, -1},
     {"jetbrains-pycharm", NULL, NULL, 0, 0, 0, 1, 1, -1},
     {"jetbrains-idea", NULL, "Welcome to IntelliJ IDEA", 0, 1, 0, 1, 0, -1},
+    {"looking-glass-client", NULL, NULL, 0, 1, 0, 1, 0, -1},
 };
 
 /* layout(s) */
@@ -110,6 +111,7 @@ static Key keys[] = {
 //	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
@@ -127,11 +129,14 @@ static Key keys[] = {
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
     { 0,                            XK_Print,  spawn,          SHCMD("screenshot") },
 
-    { 0,                            XF86AudioPlay,  spawn,      SHCMD("playerctl play-pause")} ,
-    { 0,                            XF86AudioPause,  spawn,      SHCMD("playerctl pause")} ,
-    { 0,                            XF86AudioStop,  spawn,      SHCMD("playerctl stop")} ,
-    { 0,                            XF86AudioNext, spawn,      SHCMD("playerctl next")} ,
-    { 0,                            XF86AudioPrev, spawn,      SHCMD("playerctl previous")} ,
+    { 0,                            XF86AudioPlay,          spawn,    SHCMD("playerctl play-pause")} ,
+    { 0,                            XF86AudioPause,         spawn,    SHCMD("playerctl pause")} ,
+    { 0,                            XF86AudioStop,          spawn,    SHCMD("playerctl stop")} ,
+    { 0,                            XF86AudioNext,          spawn,    SHCMD("playerctl next")} ,
+    { 0,                            XF86AudioPrev,          spawn,    SHCMD("playerctl previous")} ,
+    { 0,                            XF86AudioLowerVolume,   spawn,    SHCMD("volume-set 2%-")},
+    { 0,                            XF86AudioRaiseVolume,   spawn,    SHCMD("volume-set 2%+")},
+    { 0,                            XF86AudioMute,          spawn,    SHCMD("amixer -D pulse sset Master toggle")},
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
