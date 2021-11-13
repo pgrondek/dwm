@@ -1538,6 +1538,14 @@ resizeclient(Client *c, int x, int y, int w, int h)
 	c->oldw = c->w; c->w = wc.width = w;
 	c->oldh = c->h; c->h = wc.height = h;
 	wc.border_width = c->bw;
+
+    if(selmon->showbar) {
+    } else {
+        wc.border_width = 0;
+        c->w = wc.width += c->bw * 2;
+        c->h = wc.height += c->bw * 2;
+    }
+
 	XConfigureWindow(dpy, c->win, CWX|CWY|CWWidth|CWHeight|CWBorderWidth, &wc);
 	configure(c);
 	XSync(dpy, False);
@@ -1792,7 +1800,7 @@ fullscreen(const Arg *arg)
 {
 	if (selmon->showbar) {
 		for(last_layout = (Layout *)layouts; last_layout != selmon->lt[selmon->sellt]; last_layout++);
-		setlayout(&((Arg) { .v = &layouts[2] }));
+		setlayout(&((Arg) { .v = &layouts[3] }));
 	} else {
 		setlayout(&((Arg) { .v = last_layout }));
 	}
