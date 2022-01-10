@@ -47,20 +47,20 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-    /* class      instance    title       tags mask     isfloating   isterminal noswallow ignoretransient monitor */
-
-    {"jetbrains-studio", NULL, NULL, 0, 1, 0, 0, 0, -1 },
-    {"st", NULL, NULL, 0, 0, 1, 1, 0,  -1},
-    {"Xephyr", NULL, NULL, 0, 1, 0, 0, 0, -1},
-    {"Xnest", NULL, NULL, 0, 1, 0, 0, 0, -1},
-    {"streamdeck", NULL, NULL, 0, 0, 0, 1, 0,  -1},
-    {"jetbrains-toolbox", NULL, NULL, 0, 1, 0, 1, 0, -1},
-    {"jetbrains-idea", NULL, NULL, 0, 0, 0, 1, 1, -1},
-    {"jetbrains-webstorm", NULL, NULL, 0, 0, 0, 1, 1, -1},
-    {"jetbrains-clion", NULL, NULL, 0, 0, 0, 1, 1, -1},
-    {"jetbrains-pycharm", NULL, NULL, 0, 0, 0, 1, 1, -1},
-    {"jetbrains-idea", NULL, "Welcome to IntelliJ IDEA", 0, 1, 0, 1, 0, -1},
-    {"looking-glass-client", NULL, NULL, 0, 1, 0, 1, 0, -1},
+    /* class                    instance    title                       tags mask   isfloating  isfakefullscreen    isterminal  noswallow   ignoretransient monitor */
+    {"jetbrains-studio",        NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
+    {"st",                      NULL,       NULL,                       0,          0,          0,                  1,          1,          0,              -1},
+    {"Xephyr",                  NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
+    {"Xnest",                   NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
+    {"streamdeck",              NULL,       NULL,                       0,          0,          0,                  0,          1,          0,              -1},
+    {"jetbrains-toolbox",       NULL,       NULL,                       0,          1,          0,                  0,          1,          0,              -1},
+    {"jetbrains-idea",          NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-webstorm",      NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-clion",         NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-pycharm",       NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 0,          1,          0,                  0,          1,          0,              -1},
+    {"looking-glass-client",    NULL,       NULL,                       0,          1,          0,                  0,          1,          0,              -1},
+    {"Firefox",                 NULL,       NULL,                       0,          0,          1,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
