@@ -26,7 +26,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "emojione:size=10", "monospace:size=10"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#232323";
 static const char col_gray2[]       = "#303030";
@@ -128,7 +128,8 @@ static Key keys[] = {
     { MODKEY,                       XK_F5,     spawn,          SHCMD("idea") },
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
-    { 0,                            XK_Print,  spawn,          SHCMD("screenshot") },
+    { 0,                            XK_Print,  spawn,          SHCMD("gnome-screenshot -i") },
+    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("gnome-screenshot -a")},
 
     { 0,                            XF86AudioPlay,          spawn,    SHCMD("playerctl play-pause")} ,
     { 0,                            XF86AudioPause,         spawn,    SHCMD("playerctl pause")} ,
