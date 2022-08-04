@@ -60,7 +60,6 @@ static const Rule rules[] = {
     {"jetbrains-clion",         NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
     {"jetbrains-pycharm",       NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
     {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 0,          1,          0,                  0,          1,          0,              -1},
-    {"looking-glass-client",    NULL,       NULL,                       0,          1,          0,                  0,          1,          0,              -1},
     {"firefox",                 NULL,       NULL,                       0,          0,          1,                  0,          0,          0,              -1},
 };
 
