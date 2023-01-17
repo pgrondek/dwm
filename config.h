@@ -134,7 +134,7 @@ static Key keys[] = {
     { 0,                            XK_Print,  spawn,          SHCMD("gnome-screenshot -i") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("gnome-screenshot -a") },
 
-    { MODKEY,                       XF86Launch1,            spawn,    SHCMD("killall picom || picom") },
+    { MODKEY,                       XF86Launch1,            spawn,    SHCMD("killall; sleep 1; picom") },
 
     { 0,                            XF86AudioPlay,          spawn,    SHCMD("playerctl play-pause")} ,
     { 0,                            XF86AudioPause,         spawn,    SHCMD("playerctl pause")} ,
