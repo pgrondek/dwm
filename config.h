@@ -15,6 +15,7 @@
 #define XF86AudioPrev           0x1008ff16
 #define XF86AudioNext           0x1008ff17
 #define XF86AudioPause          0x1008ff31
+#define XF86Launch1             0x1008ff41
 
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
@@ -131,7 +132,9 @@ static Key keys[] = {
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
     { 0,                            XK_Print,  spawn,          SHCMD("gnome-screenshot -i") },
-    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("gnome-screenshot -a")},
+    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("gnome-screenshot -a") },
+
+    { MODKEY,                       XF86Launch1,            spawn,    SHCMD("killall picom || picom") },
 
     { 0,                            XF86AudioPlay,          spawn,    SHCMD("playerctl play-pause")} ,
     { 0,                            XF86AudioPause,         spawn,    SHCMD("playerctl pause")} ,
