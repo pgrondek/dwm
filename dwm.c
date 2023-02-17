@@ -1269,8 +1269,7 @@ manage(Window w, XWindowAttributes *wa)
 	if (!strcmp(c->name, scratchpadname)) {
 		c->mon->tagset[c->mon->seltags] |= c->tags = scratchtag;
 		c->isfloating = True;
-		c->x = c->mon->wx + (c->mon->ww / 2 - WIDTH(c) / 2);
-		c->y = c->mon->wy + (c->mon->wh / 2 - HEIGHT(c) / 2);
+        resize(c, 0, 0, c->mon->mw, c->h, 0);
 	}
 
 	wc.border_width = c->bw;
