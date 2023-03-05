@@ -63,6 +63,7 @@ static const Rule rules[] = {
     {"jetbrains-pycharm",       NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
     {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 0,          1,          0,                  0,          1,          0,              -1},
     {"firefox",                 NULL,       NULL,                       0,          0,          1,                  0,          0,          0,              -1},
+    {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,        1,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
