@@ -77,10 +77,11 @@ static const Layout layouts[] = {
 	{ "[]=",      tile },    /* first entry is default */
     { "=|=",      tcl},      /* three columns layout */
     { "|||",      col },     /* column layout */
+    { "|M|",      centeredmaster },
     { "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
-static const Layout* monocleLayout = &layouts[4];
+static const Layout* monocleLayout = &layouts[5];
 
 /* key definitions */
 #define MODKEY Mod4Mask
