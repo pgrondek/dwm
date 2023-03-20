@@ -42,7 +42,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1 \uF269", "2 \uf121", "3 \uf001", "4 \uf075", "5 \uf7df", "6 \uf7df", "7 \uF3F6", "8 \uf17a", "9 \uf7df"};
+static const char *tags[] = { "1 \uF269", "2 \uf121", "3 \uf001", "4 \uf075", "5 \uF1B2", "6 \uF10C", "7 \uF1B6", "8 \uf17a", "9 \uf0ad"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -56,9 +56,11 @@ static const Rule rules[] = {
      {"Xnest",                   NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"streamdeck",              NULL,       NULL,                       0,           0,          0,                  0,          1,          0,              -1},
      {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
-     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          0,                  0,          0,          0,              1},
-     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          0,                  0,          0,          0,              1},
+     /* Tag 1   */
+     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          0,                  0,          0,          0,               1},
+     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          0,                  0,          0,          0,               1},
      {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
+     /* Tag 2  */
      {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              -1},
     {"jetbrains-idea",          NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
     {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
@@ -66,10 +68,20 @@ static const Rule rules[] = {
     {"jetbrains-clion",         NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
     {"jetbrains-pycharm",       NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
     {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 1 << 1,      1,          0,                  0,          1,          0,              -1},
+     /* Tag 3  */
     { "Cider",                  NULL,       NULL,                       1 << 2,      0,          0,                  0,          0,          0,              -1},
+     /* Tag 4  */
     { "Signal",                 NULL,       NULL,                       1 << 3,      0,          0,                  0,          0,          0,              -1},
+     /* Tag 5  */
+    { "PrusaSlicer",            NULL,       NULL,                       1 << 4,      0,          0,                  0,          0,          0,              -1},
+     /* Tag 6  */
+     /* Tag 7 */
     { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+     /* Tag 8  */
     { "looking-glass-client",   NULL,       NULL,                       1 << 7,      0,          0,                  0,          0,          0,              -1},
+     /* Tag 9  */
+    { "Nextcloud",              NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
+    { "Virt-viewer",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
