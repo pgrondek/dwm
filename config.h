@@ -27,7 +27,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "emojione:size=10", "monospace:size=10"};
+static const char *fonts[]          = { "FontAwesome:size=10", "emojione:size=10", "monospace:size=10"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray0[]       = "#111111";
 static const char col_gray1[]       = "#212121";
@@ -42,7 +42,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+static const char *tags[] = { "1 \uF269", "2 \uf121", "3 \uf001", "4 \uf075", "5 \uf7df", "6 \uf7df", "7 \uF3F6", "8 \uf17a", "9 \uf7df"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -50,20 +50,26 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
     /* class                    instance    title                       tags mask   isfloating  isfakefullscreen    isterminal  noswallow   ignoretransient monitor */
-    {"jetbrains-studio",        NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
-    {"st",                      NULL,       NULL,                       0,          0,          0,                  1,          1,          0,              -1},
-    {"Xephyr",                  NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
-    {"Xnest",                   NULL,       NULL,                       0,          1,          0,                  0,          0,          0,              -1},
-    {"streamdeck",              NULL,       NULL,                       0,          0,          0,                  0,          1,          0,              -1},
-    {"jetbrains-toolbox",       NULL,       NULL,                       0,          1,          0,                  0,          1,          0,              -1},
-    {"jetbrains-idea",          NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-studio",        NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-webstorm",      NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-clion",         NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-pycharm",       NULL,       NULL,                       0,          0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 0,          1,          0,                  0,          1,          0,              -1},
-    {"firefox",                 NULL,       NULL,                       0,          0,          1,                  0,          0,          0,              -1},
-    {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,        1,          0,                  0,          0,          0,              -1},
+     {"jetbrains-studio",        NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
+     {"st",                      NULL,       NULL,                       0,           0,          0,                  1,          1,          0,              -1},
+     {"Xephyr",                  NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
+     {"Xnest",                   NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
+     {"streamdeck",              NULL,       NULL,                       0,           0,          0,                  0,          1,          0,              -1},
+     {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
+     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          0,                  0,          0,          0,              1},
+     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          0,                  0,          0,          0,              1},
+     {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
+     {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              -1},
+    {"jetbrains-idea",          NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-webstorm",      NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-clion",         NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-pycharm",       NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
+    {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 1 << 1,      1,          0,                  0,          1,          0,              -1},
+    { "Cider",                  NULL,       NULL,                       1 << 2,      0,          0,                  0,          0,          0,              -1},
+    { "Signal",                 NULL,       NULL,                       1 << 3,      0,          0,                  0,          0,          0,              -1},
+    { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+    { "looking-glass-client",   NULL,       NULL,                       1 << 7,      0,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
