@@ -51,24 +51,24 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
     /* class                    instance    title                       tags mask   isfloating  isfakefullscreen    isterminal  noswallow   ignoretransient monitor */
-     {"jetbrains-studio",        NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"st",                      NULL,       NULL,                       0,           0,          0,                  1,          1,          0,              -1},
      {"Xephyr",                  NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"Xnest",                   NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"streamdeck",              NULL,       NULL,                       0,           0,          0,                  0,          1,          0,              -1},
      {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
      /* Tag 1   */
-     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          0,                  0,          0,          0,               1},
-     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          0,                  0,          0,          0,               1},
+     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          1,                  0,          0,          0,               1},
+     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          1,                  0,          0,          0,               1},
      {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
      /* Tag 2  */
-     {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              -1},
-    {"jetbrains-idea",          NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-webstorm",      NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-clion",         NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-pycharm",       NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              -1},
-    {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 1 << 1,      1,          0,                  0,          1,          0,              -1},
+     {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      1,          0,                  0,          0,          0,              0},
+     {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              0},
+    {"jetbrains-idea",          NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
+    {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
+    {"jetbrains-webstorm",      NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
+    {"jetbrains-clion",         NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
+    {"jetbrains-pycharm",       NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
+    {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 1 << 1,      1,          0,                  0,          1,          0,              0},
      /* Tag 3  */
     { "Cider",                  NULL,       NULL,                       1 << 2,      0,          0,                  0,          0,          0,              -1},
      /* Tag 4  */
