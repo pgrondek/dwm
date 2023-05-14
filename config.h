@@ -55,11 +55,9 @@ static const Rule rules[] = {
      {"Xephyr",                  NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"Xnest",                   NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"streamdeck",              NULL,       NULL,                       0,           0,          0,                  0,          1,          0,              -1},
-     {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
      /* Tag 1   */
-     {"firefox",                 NULL,       "YouTube",                  1 << 0,      0,          1,                  0,          0,          0,               1},
-     {"firefox",                 NULL,       "Twitch",                   1 << 0,      0,          1,                  0,          0,          0,               1},
      {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
+     {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
      /* Tag 2  */
      {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      1,          0,                  0,          0,          0,              0},
      {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              0},
@@ -78,6 +76,7 @@ static const Rule rules[] = {
      /* Tag 6  */
      /* Tag 7 */
     { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+    { "steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
      /* Tag 8  */
     { "looking-glass-client",   NULL,       NULL,                       1 << 7,      0,          0,                  0,          0,          0,              -1},
      /* Tag 9  */
