@@ -99,7 +99,7 @@ static const Layout layouts[] = {
 	{ "[M]",      monocle },
     { NULL,       NULL},
 };
-static const Layout* monocleLayout = &layouts[4];
+static const  Layout* monocleLayout = &layouts[4];
 
 /* key definitions */
 #define MODKEY Mod4Mask
