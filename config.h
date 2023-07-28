@@ -77,6 +77,7 @@ static const Rule rules[] = {
      /* Tag 7 */
     { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
     { "steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+    { NULL,                     NULL,       "Steam",                    1 << 6,      0,          0,                  0,          0,          0,              -1},
      /* Tag 8  */
     { "looking-glass-client",   NULL,       NULL,                       1 << 7,      0,          0,                  0,          0,          0,              -1},
      /* Tag 9  */
