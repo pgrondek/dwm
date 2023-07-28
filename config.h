@@ -18,7 +18,7 @@
 #define XF86Launch1             0x1008ff41
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -35,10 +35,11 @@ static const char col_gray2[]       = "#303030";
 static const char col_gray3[]       = "#424242";
 static const char col_gray4[]       = "#b1b1b1";
 static const char col_gray5[]       = "#c0c0c0";
+static const char col_border[]      = "#0D47A1";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray4, col_gray0, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_gray2, col_gray3 },
+	[SchemeSel]  = { col_gray4, col_gray2, col_border },
 };
 
 /* tagging */
