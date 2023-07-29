@@ -156,12 +156,13 @@ static Key keys[] = {
     { MODKEY,                       XK_F1,     spawn,          SHCMD("firefox") },
     { MODKEY,                       XK_F2,     spawn,          SHCMD("nautilus") },
     { MODKEY,                       XK_F3,     spawn,          SHCMD("gedit") },
+    { MODKEY,                       XK_F4,     spawn,          SHCMD("prusa-slicer") },
 
     { MODKEY,                       XK_F5,     spawn,          SHCMD("idea") },
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
-    { 0,                            XK_Print,  spawn,          SHCMD("gnome-screenshot -i") },
-    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("gnome-screenshot -a") },
+    { 0,                            XK_Print,  spawn,          SHCMD("flameshot gui") },
+    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("flameshot screen") },
 
     { MODKEY,                       XF86Launch1,            spawn,    SHCMD("killall; sleep 1; picom") },
 
