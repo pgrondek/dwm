@@ -59,6 +59,7 @@ static const Rule rules[] = {
      /* Tag 1   */
      {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
      {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
+     {"firefox",                 "Toolkit",  NULL                ,       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
      /* Tag 2  */
      {"jetbrains-studio",        NULL,       NULL,                       1 << 1,      1,          0,                  0,          0,          0,              0},
      {"jetbrains-toolbox",       NULL,       NULL,                       1 << 1,      1,          0,                  0,          1,          0,              0},
