@@ -165,6 +165,7 @@ static Key keys[] = {
     { 0,                            XK_Print,  spawn,          SHCMD("flameshot screen") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("flameshot gui") },
     { MODKEY|ControlMask,           XK_s,      spawn,          SHCMD("flameshot screen") },
+    { MODKEY,                       XK_semicolon,spawn,        SHCMD("flatpak run it.mijorus.smile") },
 
     { MODKEY,                       XF86Launch1,            spawn,    SHCMD("killall; sleep 1; picom") },
 
