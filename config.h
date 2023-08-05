@@ -56,6 +56,7 @@ static const Rule rules[] = {
      {"Xephyr",                  NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"Xnest",                   NULL,       NULL,                       0,           1,          0,                  0,          0,          0,              -1},
      {"streamdeck",              NULL,       NULL,                       0,           0,          0,                  0,          1,          0,              -1},
+     { "smile",                  NULL,       NULL,                       0,           1,          0,                  0,          1,          0 },
      /* Tag 1   */
      {"firefox",                 NULL,       NULL,                       1 << 0,      0,          1,                  0,          0,          0,              -1},
      {"firefox",                 NULL,       "Picture-in-Picture",       DWM_ALL_TAGS,1,          0,                  0,          0,          0,              -1},
