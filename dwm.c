@@ -2040,9 +2040,8 @@ spawn(const Arg *arg)
 void
 spawnbar()
 {
-    Arg arg = {.v = altbarcmd};
 	if (*altbarcmd)
-		spawn(&arg);
+		system(altbarcmd);
 }
 
 void
