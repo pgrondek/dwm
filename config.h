@@ -86,6 +86,7 @@ static const Rule rules[] = {
      /* Tag 9  */
     { "Nextcloud",              NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
     { "Virt-viewer",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
+    { "Barrier"    ,            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
