@@ -70,6 +70,7 @@ static const Rule rules[] = {
     {"jetbrains-clion",         NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
     {"jetbrains-pycharm",       NULL,       NULL,                       1 << 1,      0,          0,                  0,          1,          1,              0},
     {"jetbrains-idea",          NULL,       "Welcome to IntelliJ IDEA", 1 << 1,      1,          0,                  0,          1,          0,              0},
+    {"jetbrains-clion",         NULL,       "Welcome to CLion",         1 << 1,      1,          0,                  0,          1,          0,              0},
      /* Tag 3  */
     { "Cider",                  NULL,       NULL,                       1 << 2,      0,          0,                  0,          0,          0,              -1},
      /* Tag 4  */
