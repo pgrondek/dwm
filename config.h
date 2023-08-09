@@ -180,8 +180,8 @@ static Key keys[] = {
     { 0,                            XF86AudioLowerVolume,   spawn,    SHCMD("volume-set 2%-")},
     { 0,                            XF86AudioRaiseVolume,   spawn,    SHCMD("volume-set 2%+")},
     { 0,                            XF86AudioMute,          spawn,    SHCMD("amixer -D pulse sset Master toggle")},
-    { 0,                            XF86MonBrightnessDown,  spawn,    SHCMD("brightnessctl s 10%-")},
-    { 0,                            XF86MonBrightnessUp,    spawn,    SHCMD("brightnessctl s +10%")},
+    { 0,                            XF86MonBrightnessDown,  spawn,    SHCMD("brightness s 10%-")},
+    { 0,                            XF86MonBrightnessUp,    spawn,    SHCMD("brightness s +10%")},
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
