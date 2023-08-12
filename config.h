@@ -43,7 +43,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7 ", "8", "9"};
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 static const char *tags0[] = { "\uF269", "\uf121", "\uf001", "\uf075", "\uF1B2", "\uF10C", "\uF1B6", "\uf17a", "\uf0ad"};
 
 static const Rule rules[] = {
