@@ -88,6 +88,7 @@ static const Rule rules[] = {
     { "Nextcloud",              NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
     { "Virt-viewer",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
     { "Barrier"    ,            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
+    { "thunderbird",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
