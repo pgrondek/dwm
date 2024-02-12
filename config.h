@@ -166,6 +166,9 @@ static Key keys[] = {
     { MODKEY,                       XK_F5,     spawn,          SHCMD("idea") },
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
+
+    { MODKEY,                       XK_F12,     spawn,         SHCMD("autorandr -c") },
+
     { 0,                            XK_Print,  spawn,          SHCMD("flameshot screen") },
     { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("flameshot gui") },
     { MODKEY|ControlMask,           XK_s,      spawn,          SHCMD("flameshot screen") },
