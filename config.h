@@ -167,6 +167,7 @@ static Key keys[] = {
     { MODKEY,                       XK_F6,     spawn,          SHCMD("clion") },
     { MODKEY,                       XK_F7,     spawn,          SHCMD("pycharm") },
 
+    { MODKEY,                       XK_F11,     spawn,         SHCMD("dunstctl set-paused toggle") },
     { MODKEY,                       XK_F12,     spawn,         SHCMD("autorandr -c") },
 
     { 0,                            XK_Print,  spawn,          SHCMD("flameshot screen") },
