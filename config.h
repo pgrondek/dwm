@@ -79,9 +79,9 @@ static const Rule rules[] = {
     { "PrusaSlicer",            NULL,       NULL,                       1 << 4,      0,          0,                  0,          0,          0,              -1},
      /* Tag 6  */
      /* Tag 7 */
-    { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
-    { "steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
-    { NULL,                     NULL,       "Steam",                    1 << 6,      0,          0,                  0,          0,          0,              -1},
+//    { "Steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+//    { "steam",                  NULL,       NULL,                       1 << 6,      0,          0,                  0,          0,          0,              -1},
+//    { NULL,                     NULL,       "Steam",                    1 << 6,      0,          0,                  0,          0,          0,              -1},
      /* Tag 8  */
     { "looking-glass-client",   NULL,       NULL,                       1 << 7,      0,          0,                  0,          0,          0,              -1},
      /* Tag 9  */
@@ -89,6 +89,7 @@ static const Rule rules[] = {
     { "Virt-viewer",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
     { "Barrier"    ,            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
     { "thunderbird",            NULL,       NULL,                       1 << 8,      0,          0,                  0,          0,          0,              -1},
+     {NULL,                     NULL,       "Wine desktop",                  0,           1,          0,                  0,          0,          0,              -1},
 };
 
 /* layout(s) */
