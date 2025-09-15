@@ -1,3 +1,7 @@
 dwm
 *.o
 compile_commands.json
+*.pkg.tar.zst
+dwm-msg
+src/
+pkg/
