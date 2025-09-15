@@ -41,13 +41,17 @@ dist: clean
 
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f dwm dwm-msg ${DESTDIR}${PREFIX}/bin
+	cp -f dwm dwm-msg start-dwm ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm-msg
+	chmod 755 ${DESTDIR}${PREFIX}/bin/start-dwm
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
-
+	mkdir -p ${DESTDIR}/usr/share/icons
+	cp -f dwm.png  ${DESTDIR}/usr/share/icons/dwm.png
+	mkdir -p ${DESTDIR}/usr/share/xsessions
+	cp -f dwm.desktop ${DESTDIR}/usr/share/xsessions/dwm.desktop
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1

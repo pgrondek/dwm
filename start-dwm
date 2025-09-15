@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+while : ; do
+    dwm && break || continue
+done
+
